@@ -58,7 +58,7 @@ body {
     font-size: 1.7rem;
     color: var(--white-color);
     font-weight: 500;
-    margin-right: 1.3rem;
+    margin-right: 1.5rem;
 }
 header.sticky .navbar a {
     color: var(--text-color);
@@ -857,17 +857,22 @@ opacity: 1;
         padding: 0 3% 30rem;
     }
     .home .profession-box .profession:nth-child(1) {
-        transform: rotate(-90deg) translate(-110px, -220px);
+        transform: rotate(-90deg) translate(-105px, -220px);
+        height: 3rem;
     }
     .home .profession-box .profession:nth-child(2) {
-        transform: rotate(0deg) translate(5px, -335px);
+        transform: rotate(0deg) translate(-5px, -335px);
+        height: .5rem;
     }
     .home .profession-box .profession:nth-child(3) {
-        transform: rotate(90deg) translate(-105px, -440px);
+        transform: rotate(90deg) translate(-115px, -440px);
+        height: 1rem;
     }
     .home .profession-box .profession:nth-child(4) {
-        transform: rotate(180deg) translate(-210px, -335px);
-    }  
+        transform: rotate(180deg) translate(-240px, -310px);
+        height: 6.5rem;
+        
+    }      
  }
  @media (max-width: 365px) {
     .about-img img {
@@ -879,5 +884,11 @@ opacity: 1;
     .footer p {
         text-align: center;
         margin-top: 2rem;
+    }
+    .contact-container {
+        padding-left: 10%;
+    }
+    .contact-container .contact-box {
+        width: 100%;   
     }
  }
