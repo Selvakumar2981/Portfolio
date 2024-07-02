@@ -94,7 +94,7 @@ header.sticky .navbar a.active {
     display: none;
 }
 section {
-    min-height: 100vh;
+    min-height: 100%;
     padding: 10rem 7% 2rem;
 }
 .home {
@@ -856,6 +856,9 @@ opacity: 1;
     .home {
         padding: 0 3% 30rem;
     }
+    .home .profession-box {
+        right: -3rem;
+    }
     .home .profession-box .profession:nth-child(1) {
         transform: rotate(-90deg) translate(-105px, -220px);
         height: 3rem;
@@ -886,9 +889,50 @@ opacity: 1;
         margin-top: 2rem;
     }
     .contact-container {
+        padding-left: 0;
+    }
+    .contact-container .contact-box {
+        width: 100%;   
+    }
+ }
+ @media (max-width: 288px) {
+    .contact-container {
         padding-left: 10%;
     }
     .contact-container .contact-box {
         width: 100%;   
+    }
+    .educational-container {
+       margin-left: 0;
+    }
+    .educational-container .educational-box {
+        width: 100%;
+
+    }
+    .contact-layer i {
+        font-size: 1.5rem;
+    }
+    .contact-layer h3 {
+        font-size: 1rem;
+    }
+    .home .profession-box .profession:nth-child(1) {
+        transform: rotate(-90deg) translate(-105px, -220px);
+        height: 3rem;
+    }
+    .home .profession-box .profession:nth-child(2) {
+        transform: rotate(0deg) translate(-5px, -335px);
+        height: .5rem;
+    }
+    .home .profession-box .profession:nth-child(3) {
+        transform: rotate(90deg) translate(-115px, -440px);
+        height: 1rem;
+    }
+    .home .profession-box .profession:nth-child(4) {
+        transform: rotate(180deg) translate(-240px, -310px);
+        height: 6.5rem;
+        
+    }
+    .profession-box.profession {
+        background: gray;
     }
  }
